@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'simple_form'
 gem 'sprockets', '2.11.0'
 
 ## Gemfile for Rails 3+, Sinatra, and Merb
