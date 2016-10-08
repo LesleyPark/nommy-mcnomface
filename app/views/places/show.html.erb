@@ -4,7 +4,6 @@
 	<br /><br />
 	<p><%= @place.description %></p>
 
-
 </head>
   <body>
     <div id="map"></div>
@@ -29,12 +28,9 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8XPkJu9vdh8ARwZO0glJ3ukXACc2SFno&callback=initMap">
     </script>
-
+    <br />
     <div id="map"></div>
     <% end %>
-
-    <br />
-
 	<div class="pull-right">
 		<% if current_user && current_user == @place.user %>
 			<%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
