@@ -13,3 +13,12 @@ class PhotosController < ApplicationController
     params.require(:caption)
   end
 end
+
+u = User.new
+u.avatar = params[:file] # Assign a file like this, or
+
+# like this
+File.open('somewhere') do |f|
+  u.avatar = f
+
+end

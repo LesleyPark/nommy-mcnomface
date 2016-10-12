@@ -7,4 +7,5 @@ class Place < ActiveRecord::Base
 	validates :name,:length => { minimum: 4 }, :presence => true
 	validates :address, presence: true
 	validates :description, presence: true
+	mount_uploader :picture, PictureUploader
 end
