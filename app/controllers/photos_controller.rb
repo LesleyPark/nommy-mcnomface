@@ -10,7 +10,7 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:caption)
+    params.require(:caption), {pictures: []})
   end
 end
 
