@@ -1,5 +1,4 @@
 class PhotosController < ApplicationController
-	class CommentsController < ApplicationController
     before_action :authenticate_user!
     def create
       @place = Place.find(params[:place_id])
@@ -7,9 +6,9 @@ class PhotosController < ApplicationController
       redirect_to place_path(@place)
     end
 
-  private
+    private
 
-  def photo_params
-    params.require(:photo).permit({:caption, pictures: []})
-  end
+    def photo_params
+      params.require(:photo).permit(:picture, :caption)
+    end
 end
