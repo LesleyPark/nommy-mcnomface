@@ -72,7 +72,7 @@
 <% @place.comments.each do |comment| %>
   <div class="col-xs-12 col-sm-6">
     <blockquote>
-      <b><%= comment.rating %></b> -
+      <b><%= comment.humanized_rating %></b> -
         <%= comment.message %>
       <small><%= comment.user.email %></small>
     </blockquote>
