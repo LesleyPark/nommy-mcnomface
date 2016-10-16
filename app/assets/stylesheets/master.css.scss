@@ -72,3 +72,11 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.img-responsive {
+  max-width: 375px;
+}
+
+.photo-container {
+  display: inline-block;
+}
