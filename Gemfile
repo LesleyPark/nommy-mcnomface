@@ -47,5 +47,6 @@ gem 'sprockets', '2.11.0'
 gem 'geocoder', "1.3.4"
 gem "figaro", ">=1.0.0"
 gem 'carrierwave', '< 1.0'
+gem "fog"
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
