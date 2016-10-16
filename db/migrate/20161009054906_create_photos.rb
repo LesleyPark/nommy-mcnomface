@@ -6,7 +6,6 @@ class CreatePhotos < ActiveRecord::Migration
     	t.timestamps
     end
 
-    add_index :comments, [:place_id, :name]
-    add_index :comments, :place_id
+    add_index :photos, :place_id
   end
 end
