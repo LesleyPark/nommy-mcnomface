@@ -6,6 +6,7 @@
 
 </head>
   <body>
+
   <!--Map -->
 	<% if @place.latitude.present? && @place.longitude.present? %>
     <script>
@@ -42,11 +43,11 @@
 			<% end %>   
   </div>
   <br/><br />
+
   <!-- Photos -->
   <h1 class="pull-left">Photos</h1>
   <div class="clear"></div>
   <br />
-
   <% @place.photos.each do |photo| %>
     <div class="photo-container">
           <%= image_tag photo.picture, class: 'img-responsive' %>
@@ -54,8 +55,6 @@
           <i><%= photo.caption %></i>
     </div>
   <% end %>
- 
-
 </div>
 
 <!--Comments -->
@@ -66,9 +65,7 @@
     Add a comment
   </button>
 </div>
-
 <div class "clear"></div>
-
 <% @place.comments.each do |comment| %>
   <div class="col-xs-12 col-sm-6">
     <blockquote>
